@@ -104,16 +104,16 @@ resources.map((i)=> {
 article.innerHTML += "<h2>" + i.category + "</h2>" + "<p>" + i.text + "</p>" ;
 
 
-resources.forEach((element) => element.sources.forEach((ting)=>{
-    if(title.innerHTML==element.category){
-    article.innerHTML += "<ul><li><a href='" + ting.url + "'>" + ting.title ; }
-}))
+// resources.forEach((element) => element.sources.forEach((ting)=>{
+//     if(title.innerHTML==element.category){
+//     article.innerHTML += "<ul><li><a href='" + ting.url + "'>" + ting.title ; }
+// }))
  }) 
 
-// resources.forEach((i)=> i.sources.forEach((hey) =>{
-//     if(tiltle.innerHTML==i.category){
-//     article.innerHTML += "<h2>" + i.category + "</h2>" + "<p>" + i.text + "</p>"  ; }
-//      if( tiltle.innerHTML == i.category){
-//          article.innerHTML +=  "<ul><li><a href='" + hey.url + "'>" + hey.title
-//      }
-//  }) )
+resources.forEach((i)=> i.sources.forEach((hey) =>{
+    // if(tiltle.innerHTML==i.category){
+    // article.innerHTML += "<h2>" + i.category + "</h2>" + "<p>" + i.text + "</p>"  ; }
+     if( tiltle.innerHTML == i.category){
+         article.innerHTML +=  "<ul><li><a href='" + hey.url + "'>" + hey.title
+     }
+ }) )
