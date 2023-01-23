@@ -167,6 +167,7 @@ article.product-card button{
     border-bottom: .5rem solid var(--green);
     padding: 1rem;
     transition: ease-in-out 0.5s;
+    display: block;
 }
 
 #cartview ul{
@@ -180,6 +181,7 @@ article.product-card button{
     margin-bottom: 0.5rem;
     display: block;
     clear: both;
+    transition: ease-in-out .7s;
 }
 #cartview ul li > * {
     box-sizing: border-box;
@@ -203,6 +205,8 @@ button.delete{
 }
 
 .hidden{
-    visibility: hidden;
+    visibility:hidden;
     opacity: 0;
 }
+
+

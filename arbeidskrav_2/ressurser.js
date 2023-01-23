@@ -95,10 +95,13 @@ const resources = [
     },
 ]
 
+// jeg hentet id-ene til "nav", "article" og "title" 
 const nav = document.getElementById ("nav");
 const article = document.getElementById("article");
 const tiltle = document.getElementById("title")
 
+/* jeg løp gjennom resources arrayen for å hente spesifike ojekter. jeg brukte en if test for å sjekke om tittelen er lik category i resources arrayen.
+hvis den er lik titellen så printes ut riktig tittel og text til HTML siden */
 resources.map((i)=> {
  if(tiltle.innerHTML==i.category)
 article.innerHTML += "<h2>" + i.category + "</h2>" + "<p>" + i.text + "</p>" ;
@@ -110,6 +113,8 @@ article.innerHTML += "<h2>" + i.category + "</h2>" + "<p>" + i.text + "</p>" ;
 // }))
  }) 
 
+ /* her løp jeg resources arrayen på andre nivå og denne gangen brukte jeg forEach. jeg sjekket om titellen til HTML siden var lik caategory i resource arayyen
+ og skrev ut riktige lenker til de forkjellige HTML sidene */
 resources.forEach((i)=> i.sources.forEach((hey) =>{
     // if(tiltle.innerHTML==i.category){
     // article.innerHTML += "<h2>" + i.category + "</h2>" + "<p>" + i.text + "</p>"  ; }
