@@ -95,9 +95,10 @@ const resources = [
     },
 ]
 
-// jeg hentet id-ene til "nav", "article" og "title" 
+// jeg hentet id-ene til "nav" og "article
 const nav = document.getElementById ("nav");
 const article = document.getElementById("article");
+// Her henter jeg id-en til Title fra HTML sidene, jeg har valgt til å bruke titellen til de forskjellige sidene for å sortere lenkene til riktig sted.
 const tiltle = document.getElementById("title")
 
 /* jeg løp gjennom resources arrayen for å hente spesifike ojekter. jeg brukte en if test for å sjekke om tittelen er lik category i resources arrayen.
