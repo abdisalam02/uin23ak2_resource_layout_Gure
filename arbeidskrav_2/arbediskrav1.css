@@ -60,6 +60,9 @@ article a{
 
 @media (max-width: 1000px) {
   
+    div.container{
+        padding: 0;
+    }
     nav{
     display: flex;
   }
