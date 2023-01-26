@@ -57,3 +57,26 @@ main{
 article a{
     color:  rgb(70, 239, 239);
 }
+
+@media (max-width: 1000px) {
+  
+    nav{
+    display: flex;
+  }
+
+  nav a{
+    padding: 10px;
+  }
+  
+    main{
+    display: flex;
+  }
+
+}
+
+@media (max-width: 500px){
+
+    nav a{
+    font-size: 14px;
+    }
+}
